@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concierge AI | Customer Support</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">C</div>
+            <div>
+                <h2>Concierge AI</h2>
+                <span>Customer Intelligence</span>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <p class="nav-label">WORKSPACE</p>
+            <button class="nav-item active" data-view="chat">💬 AI Assistant</button>
+            <button class="nav-item" data-view="orders">📦 Order Tracking</button>
+            <button class="nav-item" data-view="tickets">🎫 Support Tickets</button>
+        </div>
+
+        <div class="sidebar-bottom">
+            <div class="system-status">
+                <span class="status-dot"></span>
+                <span>System dashboard</span>
+            </div>
+            <p>Concierge AI v0.3.0</p>
+        </div>
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+            <div>
+                <h1 id="page-title">AI Assistant</h1>
+                <p id="page-description">Ask questions about company policies and services.</p>
+            </div>
+
+            <div class="topbar-right">
+                <span class="api-status">
+                    <span class="status-dot"></span>
+                    API Connected
+                </span>
+            </div>
+        </header>
+
+        <!-- CHAT VIEW -->
+        <section class="view active" id="chat-view">
+
+            <div class="chat-container">
+
+                <div class="welcome" id="welcome">
+                    <div class="welcome-icon">✦</div>
+                    <h2>How can I help you today?</h2>
+                    <p>Ask me about refunds, deliveries, and company policies.</p>
+
+                    <div class="suggestions">
+                        <button class="suggestion" data-question="What is the refund policy?">
+                            What is the refund policy?
+                        </button>
+                        <button class="suggestion" data-question="How long does standard delivery take?">
+                            Delivery information
+                        </button>
+                        <button class="suggestion" data-question="Can an already refunded order be refunded again?">
+                            Refund eligibility
+                        </button>
+                    </div>
+                </div>
+
+                <div class="messages" id="messages"></div>
+
+                <div class="chat-input-area">
+                    <form id="chat-form">
+                        <textarea
+                            id="question-input"
+                            placeholder="Ask Concierge AI anything..."
+                            rows="1"
+                            required
+                        ></textarea>
+                        <button type="submit" id="send-button">Send ↑</button>
+                    </form>
+                    <p class="input-note">AI responses are grounded in available company documents.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ORDER VIEW -->
+        <section class="view" id="orders-view">
+            <div class="panel">
+                <h2>Order Tracking</h2>
+                <p>Look up an order using its order ID.</p>
+
+                <form id="order-form" class="search-form">
+                    <input id="order-id" placeholder="Example: ORD1001" required>
+                    <button type="submit">Find Order</button>
+                </form>
+
+                <div id="order-result" class="result-area"></div>
+            </div>
+        </section>
+
+        <!-- TICKET VIEW -->
+        <section class="view" id="tickets-view">
+            <div class="panel">
+                <div class="panel-heading">
+                    <div>
+                        <h2>Human Support Tickets</h2>
+                        <p>Questions escalated by Concierge AI.</p>
+                    </div>
+                    <button id="refresh-tickets">↻ Refresh</button>
+                </div>
+
+                <div id="ticket-list" class="ticket-list">
+                    <p class="empty-state">Loading tickets...</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            Concierge AI · Intelligent customer support
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>
