@@ -1,0 +1,26 @@
+[
+  {
+    "chunk_id": 0,
+    "text": "REFUND POLICY Customers can request a refund within 7 days of receiving their order. Refund requests must be reviewed by the support team.",
+    "source": "refund_policy.txt",
+    "page": null
+  },
+  {
+    "chunk_id": 1,
+    "text": "Orders that have already been refunded cannot be refunded again.",
+    "source": "refund_policy.txt",
+    "page": null
+  },
+  {
+    "chunk_id": 0,
+    "text": "REFUND POLICY Customers can request a refund within 7 days. Refund requests must be reviewed by support.",
+    "source": "sample.pdf",
+    "page": 1
+  },
+  {
+    "chunk_id": 1,
+    "text": "DELIVERY POLICY Standard delivery takes 3 to 5 business days. Customers can track orders using their order ID.",
+    "source": "sample.pdf",
+    "page": 2
+  }
+]

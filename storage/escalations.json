@@ -1,0 +1,16 @@
+[
+  {
+    "ticket_id": "61f8a9f0-2aee-44dd-aa22-632f5805f191",
+    "question": "Question one",
+    "reason": "Insufficient information",
+    "status": "open",
+    "created_at": "2026-11-03T13:31:16.428090+00:00"
+  },
+  {
+    "ticket_id": "39128fe1-e8df-4bd4-a360-dc54ca3c12d5",
+    "question": "Question two",
+    "reason": "Insufficient information",
+    "status": "open",
+    "created_at": "2026-11-03T13:31:16.428484+00:00"
+  }
+]
